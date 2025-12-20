@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="MMCD: Multi-Modal Collaborative Decision-Making for Connected Autonomy with Knowledge Distillation">
+  <meta property="og:title" content="MMCD"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>MMCD</title>
+  <link rel="icon" type="image/x-icon" href="static/images/motivation.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MMCD: Multi-Modal Collaborative Decision-Making for Connected Autonomy with Knowledge Distillation
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+<!--                   <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <a href="https://scholar.google.com/citations?user=pMeiokwAAAAJ&hl=en" target="_blank">Rui Liu</a><sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Peng Gao</a><sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yu Shen</a><sup>2</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a><sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ming Lin</a><sup>1</sup>
+                    </span>
+                  </div> -->
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Rui Liu</span>,
+                    <span class="author-block">Zikang Wang</span>,
+                    <span class="author-block">Peng Gao</span>,
+                    <span class="author-block">Yu Shen</span>,
+                    <span class="author-block">Pratap Tokekar</span>,
+                    <span class="author-block">Ming Lin</span>
+                  </div>
+                  
+                  <!-- Affiliations -->
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS, 2025)</span>
+                    <!-- <span class="author-block"><sup>1</sup> University of Maryland, College Park</span><br> -->
+                    <!-- <span class="author-block"><sup>2</sup> Second Author's Institution Name</span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://www.arxiv.org/pdf/2509.18198" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                      <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://www.arxiv.org/abs/2509.18198" target="https://www.arxiv.org/abs/2409.12092"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+
+                    <!-- Supplementary PDF link -->
+<!--                     <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+<!--                   <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/mmcd_app.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+      <div class="content has-text-justified">
+      <p>
+        <b>Overview of the MMCD framework with knowledge distillation</b>. 
+        Each connected vehicle processes its own RGB data, LiDAR data, or both locally to generate feature embeddings, which are then shared to the ego vehicle. 
+        Upon receiving the shared data, the ego vehicle fuses the multi-vehicle, multi-modality features to generate its action, such as braking, particulary in accident-prone scenarios. 
+        During the training stage, LiDAR feature embeddings are used as a teacher to guide the learning of RGB feature embeddings through cross-modal knowledge distillation. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Autonomous systems have advanced significantly, but challenges persist in accident-prone environments where robust decision-making is crucial. 
+            A single vehicle's limited sensor range and obstructed views increase the likelihood of accidents. Multi-vehicle connected systems and multi-modal approaches, leveraging RGB images and LiDAR point clouds, have emerged as promising solutions. 
+            However, existing methods often assume the availability of all data modalities and connected vehicles during both training and testing, which is impractical due to potential sensor failures or missing connected vehicles. 
+            To address these challenges, we introduce a novel framework <b>MMCD (Multi-Modal Collaborative Decision-making)</b> for connected autonomous driving. 
+            Our framework fuses multi-modal observations from ego and collaborative vehicles to enhance decision-making under challenging conditions. 
+            To ensure robust performance when certain data modalities are unavailable during testing, we propose an approach based on cross-modal knowledge distillation with a teacher-student model structure. 
+            The teacher model is trained with multiple data modalities, while the student model is designed to operate effectively with reduced modalities.
+            In experiments on <i>connected autonomous driving with ground vehicles</i> and <i>aerial-ground vehicles collaboration</i>, our method improves driving safety by up to <b>20.7</b>%, 
+            surpassing the best-existing baseline in detecting potential accidents and making safe driving decisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Motivation -->
+<!--   <section class="hero is-light"> -->
+  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
+    Motivation
+  </div>
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <div class="item">
+    <img src="static/images/motivation.png" alt="Descriptive Alt Text" style="max-width: 100%; width: 600px; height: auto;">
+      <div style="font-size: 16px; color: #555; margin-top: 10px; max-width: 1000px; text-align: center; margin-left: auto; margin-right: auto;">
+        <h2 class="subtitle has-text-centered">
+          <div class="content has-text-justified">
+            <p>
+              <b>A motivating scenario of multi-modal collaborative decision-making (MMCD) for connected autonomous driving.</b> 
+              The purple dash line represents the exchange of vital information between vehicles, overcoming occlusions and sensor limitations. 
+              <b>MMCD</b> remains robust by leveraging available RGB data to enable the ego vehicle to take brake actions and avoid accidents even when its LiDAR is unavailable.
+      </div>
+        </h2>
+    </div>
+  </div>
+  </div>
+<!--   </section> -->
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Motivation</h2>
+      <div id="results-scroll" class="scroll-container">
+      <div style="text-align: center; margin-bottom: 20px;">
+       <div class="item">
+        <img src="static/images/page1.png" alt="Descriptive Alt Text" style="max-width: 100%; width: 600px; height: auto;">
+        <h2 class="subtitle has-text-centered">
+          <div class="content has-text-justified">
+            <p>
+          Comparison of standard BC and our approach
+for food acquisition. The standard BC (top) processes robot
+observations through an off-the-shelf encoder (e.g., ResNet-
+50), generating actions that are not robust and generalizable.
+In contrast, our proposed approach IMRL (bottom) utilizes
+visual, physical, temporal andd geometric representation
+learning to develop richer and more informative represen-
+tations to enhance the robustness and generalizability of BC
+for food acquisition.
+          </p>
+          </div>
+        </h2>
+      </div> -->
+<!--       <div class="item">
+
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div> -->
+        
+<!--   </div>
+</div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+ <!-- Experiments -->
+  <section class="hero">
+
+  <!-- Baseline Comparison -->
+  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
+   Connected Autonomous Driving
+  </div>
+
+  <!-- Row of three videos from Google Drive -->
+  <div style="display: flex; justify-content: center; gap: 10px;">
+
+    <!-- Video 1 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1PIU8IBrrQXqnLYFYU3sX8g_9UXlp6Lw2/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">BEV</div>
+    </div>
+
+    <!-- Video 2 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1pOAYw-KqWpGvfRntEwMx_3cf7jlG57IP/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">Ego view</div>
+    </div>
+
+    <!-- Video 3 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1juAPOIpytJsTgWvdjjKBna2HJAq45rfT/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">C1 view</div>
+    </div>
+
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1F8jahS4SbcvFNJq6Xw-LkoeMijIe5NtH/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">C2 view</div>
+    </div>
+  </div>
+  
+  <div style="text-align: center; font-size: 20px; color: #555; max-width: 1000px; margin: 0 auto; margin-bottom: 20px;">
+    <b>Overtaking</b> 
+  </div>
+
+  <!-- Row of three videos from Google Drive -->
+  <div style="display: flex; justify-content: center; gap: 10px;">
+
+    <!-- Video 1 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1Ky95kn212m671cWiIQDX3mtI_-KaXaxV/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">BEV</div>
+    </div>
+
+    <!-- Video 2 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/15dABiyKsPZbQqa-7N7cSOjNclDv_Yx88/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">Ego view</div>
+    </div>
+
+    <!-- Video 3 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1i0LY9hSACi9e0zYVrdSLdRjJoGfaVbaS/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">C1 view</div>
+    </div>
+
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1k-tpQc2eQvCS_n37YeRNPMChWJJhCixH/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">C2 view</div>
+    </div>
+  </div>
+  
+  <div style="text-align: center; font-size: 20px; color: #555; max-width: 1000px; margin: 0 auto; margin-bottom: 20px">
+    <b>Left Turn</b> 
+  </div>
+
+    <!-- Row of three videos from Google Drive -->
+  <div style="display: flex; justify-content: center; gap: 10px;">
+
+    <!-- Video 1 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1U-nK-3kjsRKyVyOz9qCPH8abU7RpPNGo/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">BEV</div>
+    </div>
+
+    <!-- Video 2 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/11ZUv1Y3_AjVBzulTRsu-dz6sR_xJJQOV/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">Ego view</div>
+    </div>
+
+    <!-- Video 3 with caption -->
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1PvAB0ENaG63z4G34qYHwGtQTG8VQYdhK/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">C1 view</div>
+    </div>
+
+    <div style="text-align: center;">
+      <iframe src="https://drive.google.com/file/d/1dIP4nGW1A5xqyvvSJiq8M2IXW1KHLTpT/preview" width="200" height="200" allow="autoplay"></iframe>
+      <div style="margin-top: 5px; font-size: 16px;">C2 view</div>
+    </div>
+  </div>
+  
+  <div style="text-align: center; font-size: 20px; color: #555; max-width: 1000px; margin: 0 auto;">
+    <b>Red Light Violation</b>
+  </div>
+  </section>
+
+<!-- Experimental results -->
+  <section class="hero">
+  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px;  margin-top: 30px;">
+    Experimental Results
+  </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Comparison Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto;
+            line-height: 1.2;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><strong>Performance comparison of MMCD against multiple baselines for connected autonomous driving with ground vehicles</strong>. 
+          <b>MMCD</b> shows superior performance across all evaluated scenarios and the improvement relative to STG is shown in bold.</caption>
+        <tr>
+            <th rowspan="2">Approach</th>
+            <th rowspan="2">PS &darr;</th>
+            <th colspan="2">Overtaking</th>
+            <th colspan="2">Left Turn</th>
+            <th colspan="2">Red Light Violation</th>
+        </tr>
+        <tr>
+            <th>ADR &uarr;</th>
+            <th>IR &uarr;</th>
+            <th>ADR &uarr;</th>
+            <th>IR &uarr;</th>
+            <th>ADR &uarr;</th>
+            <th>IR &uarr;</th>
+        </tr>
+        <tr>
+            <td>COOPERNAUT</td>
+            <td>65.5KB</td>
+            <td>0.8813</td>
+            <td>0.8544</td>
+            <td>0.5071</td>
+            <td>0.7696</td>
+            <td>0.5446</td>
+            <td>0.8323</td>
+        </tr>
+        <tr>
+            <td>STG</td>
+            <td>4.9KB</td>
+            <td>0.9265</td>
+            <td>0.8336</td>
+            <td>0.6070</td>
+            <td>0.7670</td>
+            <td>0.6451</td>
+            <td>0.7846</td>
+        </tr>
+        <tr>
+            <td>AML</td>
+            <td>1.0KB</td>
+            <td>0.8206</td>
+            <td>0.8322</td>
+            <td>0.5000</td>
+            <td>0.7600</td>
+            <td>0.4175</td>
+            <td>0.7328</td>
+        </tr>
+        <tr><th colspan="8">Non-collaborative</th></tr>
+        <tr>
+            <td>Case A (RGB, RGB)</td>
+            <td>1.0KB</td>
+            <td>0.8179</td>
+            <td>0.8169</td>
+            <td>0.4601</td>
+            <td>0.7268</td>
+            <td>0.3125</td>
+            <td>0.6756</td>
+        </tr>
+        <tr>
+            <td>Case B (LiDAR, LiDAR)</td>
+            <td>65.5KB</td>
+            <td>0.8228</td>
+            <td>0.8134</td>
+            <td>0.4059</td>
+            <td>0.7217</td>
+            <td>0.4018</td>
+            <td>0.7351</td>
+        </tr>
+        <tr>
+            <td>Case C (RGB + LiDAR, RGB + LiDAR)</td>
+            <td>66.5KB</td>
+            <td>0.8654</td>
+            <td>0.8205</td>
+            <td>0.5576</td>
+            <td>0.7483</td>
+            <td>0.5250</td>
+            <td>0.7504</td>
+        </tr>
+<!--         <tr>
+            <td>Case D (RGB + LiDAR, RGB)</td>
+            <td>1.0KB</td>
+            <td>0.8206</td>
+            <td>0.8322</td>
+            <td>0.5000</td>
+            <td>0.7600</td>
+            <td>0.4175</td>
+            <td>0.7328</td>
+        </tr> -->
+        <tr><th colspan="8">Collaborative</th></tr>
+        <tr>
+            <td>Case A (RGB, RGB)</td>
+            <td>1.0KB</td>
+            <td>0.8522</td>
+            <td>0.8415</td>
+            <td>0.5642</td>
+            <td>0.7804</td>
+            <td>0.5176</td>
+            <td>0.8104</td>
+        </tr>
+        <tr>
+            <td>Case B (LiDAR, LiDAR)</td>
+            <td>65.5KB</td>
+            <td>0.8813</td>
+            <td>0.8544</td>
+            <td>0.5071</td>
+            <td>0.7696</td>
+            <td>0.5446</td>
+            <td>0.8323</td>
+        </tr>
+        <tr>
+            <td><b>MMCD</b> (RGB + LiDAR, RGB + LiDAR)</td>
+            <td>66.5KB</td>
+            <td><strong>0.9604</strong></td>
+            <td><strong>0.8676</strong></td>
+            <td><strong>0.7329</strong></td>
+            <td><strong>0.8122</strong></td>
+            <td><strong>0.6875</strong></td>
+            <td><strong>0.8578</strong></td>
+        </tr>
+        <tr>
+            <td>Case D (RGB + LiDAR, RGB)</td>
+            <td>1.0KB</td>
+            <td>0.9288</td>
+            <td>0.8381</td>
+            <td>0.6632</td>
+            <td>0.7946</td>
+            <td>0.6607</td>
+            <td>0.8262</td>
+        </tr>
+        <tr>
+            <th>Improvement</th>
+            <td><strong>4.9X</strong></td>
+            <td><strong>3.7%</strong></td>
+            <td><strong>4.1%</strong></td>
+            <td><strong>20.7%</strong></td>
+            <td><strong>5.9%</strong></td>
+            <td><strong>6.6%</strong></td>
+            <td><strong>9.3%</strong></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+ <!-- Video Representation -->
+<!--   <section class="hero is-small is-light">
+  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px;  margin-top: 30px;">
+    Video Representation 
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
+    <iframe src="https://drive.google.com/file/d/1uQ9W-3BlGgxioT-JrvcSRBdfLSeRYi8m/preview" width="800" height="450" allow="autoplay"></iframe>
+  </div>
+  </section> -->
+
+  
+  <!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--   <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{liu2024imrl,
+        title={IMRL: Integrating Visual, Physical, Temporal, and Geometric Representations for Enhanced Food Acquisition},
+        author={Liu, Rui and Mahammad, Zahiruddin and Bhaskar, Amisha and Tokekar, Pratap},
+        journal={arXiv preprint arXiv:2409.12092},
+        year={2024}}
+      </code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
