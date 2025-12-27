@@ -228,38 +228,38 @@
 
     <!-- Image 1 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot0.png" alt="CartPole 1" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(a) Risk-neutral</div>
+      <img src="static/images/train_7b.jpg" alt="" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(a) Training accuracy</div>
     </div>
 
     <!-- Image 2 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot1.png" alt="CartPole 2" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) \( \beta = -0.5 \)</div>
+      <img src="static/images/val_7b" alt="" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) Validation accuracy</div>
     </div>
 
     <!-- Image 3 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot2.png" alt="CartPole 3" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) \( \beta = -1.0 \)</div>
+      <img src="static/images/radar_7b.png" alt="" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) Generalization performance</div>
     </div>
 
     <!-- Image 4 -->
-    <div style="width: 15%; text-align: center;">
+    <!-- <div style="width: 15%; text-align: center;">
       <img src="static/images/robot/plot3.png" alt="CartPole 4" style="width: 100%; height: auto; border-radius: 6px;">
       <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) \( \beta = -5.0 \)</div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Caption -->
   <div style="font-size: 16px; color: #555; max-width: 1000px; margin: 0 auto; text-align: justify; padding: 0 10px;">
     <p>
-      <b>Learning curves for risk-neutral and risk-averse  cases with varying \( \beta \) values in the holonomic robot navigation environment</b>. 
-      The solid lines represent average returns over 10 runs, while the shaded lines indicate returns from an individual run. 
-      The risk-neutral policy exhibits large deviations and instability, with excessive oscillations. 
-      In contrast, the risk-averse policies with \( \beta = -0.5 \) and \( \beta = -1.0 \) demonstrate greater stability, faster convergence, and higher returns. 
-      However, when \( \beta = -5.0 \), the learning efficiency decreases because an excessively large magnitude of \( \beta \) leads to an overly conservative 
-      policy that prioritizes obstacle avoidance to the extent that learning efficiency is compromised.
+      <b>Performance overview of MSSR</b>. 
+      (a–b) Training and validation accuracy of MVSR (Multimodal Vanilla Single-Rollout), GRPO and our MSSR, trained on the Vision-R1-RL training set and validated on its corresponding validation set. 
+      MSSR remains stable and improves steadily, whereas MVSR is unstable and collapses. Notably, MSSR reaches a similar final validation accuracy to GRPO with half of the training steps, 
+      highlighting its superior training compute efficiency. (c) Our MSSR achieves higher generalization performance across diverse multimodal reasoning benchmarks, 
+      including MathVerse, MathVista, MMK12, R1-Onevision-Bench, and HallusionBench, compared to other baselines including GRPO, RLOO, and REINFORCE++. 
+      For fair comparisons, we have equivalent total number of rollouts per step for all methods.
     </p>
   </div>
 
