@@ -183,7 +183,7 @@
             Reinforcement Learning with Verifiable Rewards (RLVR) has become a key paradigm to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). 
             However, prevalent group-based algorithms such as GRPO require multi-rollout sampling for each prompt. 
             While more efficient single-rollout variants have recently been explored in text-only settings, we find that they suffer from severe instability in multimodal contexts, 
-            often leading to training collapse. To address this training efficiency-stability trade-off, we introduce <b>MSSR</b>(Multimodal Stabilized Single-Rollout), 
+            often leading to training collapse. To address this training efficiency-stability trade-off, we introduce <b>MSSR</b> (Multimodal Stabilized Single-Rollout), 
             a group-free RLVR framework that achieves both stable optimization and effective multimodal reasoning performance. 
             MSSR achieves this via an entropy-based advantage-shaping mechanism that adaptively regularizes advantage magnitudes, preventing collapse and maintaining training stability. 
             While such mechanisms have been used in group-based RLVR, we show that in the multimodal single-rollout setting they are not merely beneficial but essential for stability. 
@@ -202,25 +202,25 @@
 <!-- Experiments -->
 <section class="hero">
   <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
-    CartPole
+    Approach
   </div>
 
   <!-- Single Image Centered -->
   <div style="text-align: center; margin-bottom: 10px;">
-    <img src="static/images/cartpole.png" alt="CartPole Result" style="width: 80%; max-width: 500px; height: auto; border-radius: 6px;">
+    <img src="static/images/mssr.png" alt="Approach" style="width: 80%; max-width: 500px; height: auto; border-radius: 6px;">
   </div>
 
   <!-- Caption -->
   <div style="font-size: 16px; color: #555; max-width: 1000px; margin: 0 auto; text-align: justify; padding: 0 10px;">
     <p>
-      <b>Learning curves for risk-neutral and risk-averse algorithms with varying \( \beta \) values for the CartPole environment</b>. 
-      The shaded area indicates standard deviation over 10 runs. 
-      When \( \beta = -0.1 \), the learning curve of the risk-averse REINFORCE converges faster and achieves higher returns compared to the risk-neutral REINFORCE.
+      <b>Overview of the proposed MSSR approach</b>. 
+      Given a multimodal input, i.e., an image and the corresponding question, we generate a single rollout through the policy model. 
+      We then use a Beta distribution to estimate the baseline value \( v \), compute the advantage \( A \), and normalize it across the batch. Finally, we propose entropy-based advantage shaping to preserve entropy and stabilize training.
     </p>
   </div>
 
   <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
-    Holonomic Robot Navigation
+    MSSR Performance Overview
   </div>
 
   <!-- 2x2 Image Grid -->
