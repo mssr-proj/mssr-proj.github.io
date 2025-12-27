@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Towards Efficient Risk-Sensitive Policy Gradient: An Iteration Complexity Analysis">
+  <meta name="description" content="Stable and Efficient Single-Rollout RL for Multimodal Reasoning">
   <meta property="og:title" content="RiskRL"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
@@ -60,15 +60,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Towards Efficient Risk-Sensitive Policy Gradient: An Iteration Complexity Analysis
+            <h1 class="title is-1 publication-title">Stable and Efficient Single-Rollout RL for Multimodal Reasoning
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://ruiiu.github.io" target="_blank">Rui Liu</a><sup></sup>,</span>
+                <a href="https://ruiiu.github.io" target="_blank">Rui Liu</a>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Anish Gupta</a><sup></sup>,</span>
+                <a href="" target="_blank">Dian Yu</a>
               <span class="author-block">
-                <a href="https://enoorani.github.io/" target="_blank">Erfaun Noorani</a><sup></sup>,</span>
+                <a href="" target="_blank">Lei Ke</a>
+              <span class="author-block">
+                <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a>
+              </span>
+              <span class="author-block">
+                <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a>
+              </span>
+              <span class="author-block">
+                <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a>
+              </span>
+              <span class="author-block">
+                <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a>
+              </span>
               <span class="author-block">
                 <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a>
               </span>
@@ -84,7 +96,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2403.08955" target="_blank"
+                        <a href="https://arxiv.org/pdf/2512.18215" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -94,7 +106,7 @@
                     </span>
                       <!-- ArXiv abstract Link -->
                     <span class="link-block">
-                      <a href="https://www.arxiv.org/abs/2403.08955" target="https://www.arxiv.org/abs/2403.08955"
+                      <a href="https://www.arxiv.org/abs/2512.18215" target="https://www.arxiv.org/abs/2512.18215"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -104,7 +116,7 @@
                   </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/proof.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -112,7 +124,7 @@
                       </span>
                       <span>Appendix</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
 <!--                   <span class="link-block">
@@ -164,15 +176,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Reinforcement Learning (RL) has shown exceptional performance across various applications, enabling autonomous agents to learn optimal policies through interaction with their environments. 
-            However, traditional RL frameworks often face challenges in terms of iteration efficiency and robustness. 
-            Risk-sensitive policy gradient methods, which incorporate both expected return and risk measures, have been explored for their ability to yield more robust policies, yet their iteration complexity remains largely underexplored. 
-            In this work, we conduct a rigorous iteration complexity analysis for the risk-sensitive policy gradient method, focusing on the REINFORCE algorithm with an exponential utility function. 
-            We establish an iteration complexity of \( \mathcal{O}(\epsilon^{-2}) \) to reach an \( \epsilon \)-approximate first-order stationary point (FOSP). 
-            Furthermore, we investigate whether risk-sensitive algorithms can achieve better iteration complexity compared to their risk-neutral counterparts. 
-            Our analysis indicates that risk-sensitive REINFORCE can potentially converge faster. 
-            To validate our analysis, we empirically evaluate the learning performance and convergence efficiency of the risk-neutral and risk-sensitive REINFORCE algorithms in multiple environments: CartPole, MiniGrid, and Robot Navigation. 
-            Empirical results confirm that risk-averse cases can converge and stabilize faster compared to their risk-neutral counterparts.
+            Reinforcement Learning with Verifiable Rewards (RLVR) has become a key paradigm to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). 
+            However, prevalent group-based algorithms such as GRPO require multi-rollout sampling for each prompt. 
+            While more efficient single-rollout variants have recently been explored in text-only settings, we find that they suffer from severe instability in multimodal contexts, 
+            often leading to training collapse. To address this training efficiency-stability trade-off, we introduce <b>MSSR</b>(Multimodal Stabilized Single-Rollout), 
+            a group-free RLVR framework that achieves both stable optimization and effective multimodal reasoning performance. 
+            MSSR achieves this via an entropy-based advantage-shaping mechanism that adaptively regularizes advantage magnitudes, preventing collapse and maintaining training stability. 
+            While such mechanisms have been used in group-based RLVR, we show that in the multimodal single-rollout setting they are not merely beneficial but essential for stability. 
+            In in-distribution evaluations, MSSR demonstrates superior training compute efficiency, achieving similar validation accuracy to the group-based baseline with half the training steps. 
+            When trained for the same number of steps, MSSR's performance surpasses the group-based baseline and shows consistent generalization improvements across five diverse reasoning-intensive 
+            benchmarks. Together, these results demonstrate that MSSR enables stable, compute-efficient, and effective RLVR for complex multimodal reasoning tasks.
           </p>
         </div>
       </div>
